@@ -1,0 +1,21 @@
+service: base-template
+
+plugins:
+  - serverless-bundle
+  - serverless-pseudo-parameters
+
+provider:
+  name: aws
+  profile: sls
+  runtime: nodejs14.x
+  memorySize: 256
+  stage: ${opt:stage, 'dev'}
+  region: eu-west-1
+
+functions:
+  example:
+    handler: src/handlers/example.handler
+    events:
+      - http:
+          method: GET
+          path: /example

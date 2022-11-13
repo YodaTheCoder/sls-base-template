@@ -1,0 +1,16 @@
+{
+  "name": "base-template",
+  "version": "1.0.0",
+  "description": "https://github.com/YodaTheCoder/sls-base-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-bundle": "^5.5.0",
+    "serverless-pseudo-parameters": "^2.6.1"
+  }
+}
